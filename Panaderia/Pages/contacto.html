@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panaderia familiar en Capital Federal. Las mejores facturas y los mas ricos postres. Conoce más en nuestra web">
+    <meta name="keywords" content="Panaderia, contactos">
+    <link rel="shortcut icon" href="/Panaderia/img/panaderia.png">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilo/Estilo.css">
+</head>
+<body>
+
+    <header>
+        
+        <div class="imgPrin">
+            <img src="../img/fotoFlauta.jpg" height="140px" width="140px" alt="Logo de la Página"/>
+            <h1>La Gran Flauta</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"> Inicio    </a>
+                </li>
+                <li>
+                    <a href="locales.html"> Locales</a>
+                </li>
+                <li>
+                    <a href="recetas.html"> Recetas</a>
+                    <ul>    
+                        <li><a href="#">Almuerzos</a>
+                        </li>
+                        <li><a href="#">Desayunos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contacto.html"> Contacto</a>
+                </li>
+                <li>
+                    <a href="Productos.html"> Productos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+            <form class="formatForm" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="name">Nombre </label> <input type="text" name="Nombre" required placeholder= "escribe tu nombre"><br>
+                <label for="apellido">Apellido</label> <input type="text" name="apellido" required placeholder= "escribe tu apellido"><br>
+                <label for="phone">Telefono </label> <input type="text" required placeholder= "Ej: 11 6666 4444"><br>
+                <label for="email">Mail</label> <input type="email" required placeholder= "ejemplo@mail.com"><br>
+                <label for="Localidad"> Localidad</label>
+                <select name="Localidad">
+                <option value="Mataderos">Mataderos</option>
+                <option value="Palermo">Palermo</option>
+                <option value="Villa Crespo">Villa Crespo</option>
+                <option value="La Paternal">La Paternal</option>
+                </select><br>
+                <label for="">¿Cómo nos conociste?</label><br>
+                <input type="checkbox" name="Amigo" value="Un amigo/a">
+                <label for="Un amigo/a">Un amigo/a</label><br>
+                <input type="checkbox" name="Publicidad" value="Publicidad">
+                <label for="Publicidad">Publicidad</label><br>
+                <input type="checkbox" name="Redes Sociales" value="Redes Sociales">
+                <label for="Redes sociales">Redes Sociales</label><br>
+                <label for="comment">Comentarios</label><br>
+                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+                <br>
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar">
+            </form>
+    </main>
+    <footer>
+                <h4>Redes Sociales</h4>
+                    <a href="https://www.facebook.com/La-Gran-Flauta-101594128497995" target="_blank"> Facebook</a>
+                    <a href="https://www.instagram.com/lagranflautapanaderia/" target="_blank"> Instagram</a>
+                    <a href="https://api.whatsapp.com/send/?phone=5491149702666&text&app_absent=0" target="_blank">Whatsapp</a>
+    
+    </footer>
+</body>
+</html>
