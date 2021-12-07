@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Oswald:wght@200;600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +9,9 @@
 
 /*Estilo body*/
 body {
+    background: url(../img/fondo.jpg);
     background-size: cover;
-    background-color: orange;
-    height: 800px;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -51,6 +54,11 @@ nav {
     height: 40px;
     width: auto;
     background-color: black;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+    font-size: 100px;
+    color: black;
 }
 
 .flexMenu{
@@ -117,8 +125,13 @@ footer {
 }
 
 #articuloUno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: white solid;
-    background-color: sandybrown;
+    background: url(../img/fondo2.jpg);
+    background-size: 100%;
     padding: 3px;
     text-align: center;
     font-size: 15px;
@@ -127,12 +140,15 @@ footer {
 }
 
 table {
+    margin-top: 25px;
+    width: 500px;
     background-size: cover;
 }
 
 .articuloDos {
     border: white solid;
-    background-color: sandybrown;
+    background: url(../img/fondo2.jpg);
+    background-size: 100%;
     padding: 3px;
     text-align: justify;
     font-size: 20px;
@@ -170,12 +186,17 @@ table {
 /*Estilo Locales*/
 .formatTitle {
     font-family: 'Karla', sans-serif;
+    text-align: center;
+}
 
+.locales-div{
+    display: flex;
+    justify-content: center;
 }
 
 .formatList {
     border: white solid;
-    background-color: sandybrown;
+    background: url(../img/fondo2.jpg);
     padding: 30px;
     text-align: center;
     font-size: 20px;
@@ -184,22 +205,40 @@ table {
 }
 
 /*Estilo Recetas*/
+.receta-titulo{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
 .ordenLista {
     list-style-position: inside;
     list-style-image: url();
     /*buscar una imagen de una flecha*/
 }
+.receta-foto {
+    border: black solid;
+    height: auto;
+    width: 50%;
+}
+.receta-div{
+    text-align: center;
+    margin: 8px;
+}
 
 /*Estilo Contacto*/
+.contacto-div{
+    display: flex;
+    justify-content: center;
+}
 .formatForm {
-    border: white solid;
-    background-color: sandybrown;
+    border: black solid;
+    background-image: url(../img/fondo2.jpg);
     padding: 40px;
     text-align: left;
     font-size: 18px;
     height: 75%;
     width: 35%;
 }
+
 
 /*Estilo Productos*/
 
@@ -259,6 +298,45 @@ table {
     background-image: url(../img/bandeja.jpg) 
 }
 
+@media (max-width: 600px){
+    .sectionProd {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 400px);
+    }
+    #caja1 {
+        grid-column: 1/1;
+        grid-row: 1/2;   
+        }
+    
+    #caja2 {
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
+    
+    #caja3 {
+        grid-column: 1/1;
+        grid-row: 3/4; 
+    }
+    
+    #caja4 {
+        grid-column: 1/1;
+        grid-row: 4/5; 
+    }
+    
+    #caja5 {
+        grid-column: 1/1;
+        grid-row: 5/6;
+    }
+    
+    #caja6 {
+        grid-column: 1/1;
+        grid-row: 6/7; 
+    }
+}
+
 .titleProduct {
     text-align: center;
     font-size: 50px;
@@ -267,17 +345,17 @@ table {
 /*media queries - inicio*/
 @media only screen and (max-width: 600px){
     body{
-        background-color: green;
+        background: url(../img/fondo.jpg)
     }
     header {
         height: 100px;
         width: 100%;
-        background-color: yellow;
+        background-color: black;
     }
     h1 {
         font-style: italic;
         text-align: center;
-        color: rgb(119, 0, 255);
+        color: orange;
         background-color: rgb(0, 0, 0);
         font-size: 3cm;
     }

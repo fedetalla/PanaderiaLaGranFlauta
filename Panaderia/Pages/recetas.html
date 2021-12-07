@@ -13,7 +13,9 @@
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Karla & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilo/Estilo.css">
+    
 </head>
 <body>
     <header>
@@ -22,52 +24,91 @@
             <img src="../img/fotoFlauta.jpg" height="140px" width="140px" alt="Logo de la Página"/>
             <h1>La Gran Flauta</h1>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html"> Inicio    </a>
-                </li>
-                <li>
-                    <a href="locales.html"> Locales</a>
-                </li>
-                <li>
-                    <a href="recetas.html"> Recetas</a>
-                    <ul>    
-                        <li><a href="#">Almuerzos</a>
-                        </li>
-                        <li><a href="#">Desayunos</a>
-                        </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/locales.html">Locales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../pages/recetas.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Recetas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Desayunos</a></li>
+                      <li><a class="dropdown-item" href="#">Almuerzos</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="contacto.html"> Contacto</a>
-                </li>
-                <li>
-                    <a href="Productos.html"> Productos</a>
-                </li>
-            </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h2>RECETAS FÁCILES</h2> <br>
+        <h2 class="receta-titulo">RECETAS FÁCILES</h2>
 
-            <h3>Brownies caseros</h3>
+        <div class="receta-div">
+            <img class="receta-foto" src="../img/brownies.jpg" alt="Brownies">
+                <h3>Brownies caseros</h3>
 
-                <ol type="A" class="ordenLista">
-                    <li>En una cazuela pequeña derrite la mantequilla.</li>
-                    <li>Vacía la mantequilla derretida a un tazón grande y agrega el azúcar y la sal. Mezcla con un batidor de globo hasta que se incorporen muy bien.</li>
-                    <li>Agrega los huevos y la vainilla y mezcla con vigor hasta que quede una mezcla homogénea.</li>
-                    <li>Añade la harina y el cacao y mezcla muy bien hasta obtener una mezcla homogénea y bien consistente.</li>
-                    <li>Vacía la mezcla en un refractario o charola de 9x12 pulgadas (con mínimo 1.5 pulgadas de altura) que esté previamente engrasada o cubierta con papel para hornear y hornea por 20 minutos a 180ºC (350ºF).</li>
-                    <li>Deja enfriar por al menos 15 minutos antes de partir.</li>
-                </ol>
+                    <ol type="A" class="ordenLista">
+                        <li>En una cazuela pequeña derrite la mantequilla.</li>
+                        <li>Vacía la mantequilla derretida a un tazón grande y agrega el azúcar y la sal. Mezcla con un batidor de globo hasta que se incorporen muy bien.</li>
+                        <li>Agrega los huevos y la vainilla y mezcla con vigor hasta que quede una mezcla homogénea.</li>
+                        <li>Añade la harina y el cacao y mezcla muy bien hasta obtener una mezcla homogénea y bien consistente.</li>
+                        <li>Vacía la mezcla en un refractario o charola de 9x12 pulgadas (con mínimo 1.5 pulgadas de altura) que esté previamente engrasada o cubierta con papel para hornear y hornea por 20 minutos a 180ºC (350ºF).</li>
+                        <li>Deja enfriar por al menos 15 minutos antes de partir.</li>
+                    </ol>
+
+
+
+            <img class="receta-foto" src="../img/panalmendras.jpg" alt="Pan de Almendras">        
+                <h3>Pan de almendras</h3>
+    
+                    <ol type="A" class="ordenLista">
+                        <li>Poner en remojo las almendras. Al día siguiente, retirar el agua y enjuagarlas.</li>
+                        <li>Cubrir las pasas con agua y dejarlas en remojo durante al menos 30 minutos. Después, retirar el agua del remojo</li>
+                        <li>Rallar muy fina la zanahoria.  Triturar las pasas junto con las semillas de cilantro en un molinillo de café eléctrico hasta obtener una pasta cremosa. Picar las almendras y las hojas o flores de abedul en trozos grandes con la batidora. Moler las semillas de lino en un molinillo de café eléctrico durante 10 segundos.</li>
+                        <li>Mezclar todos los ingredientes y amasarlos bien hasta conseguir una masa compacta y maleable.</li>
+                        <li>Para el proceso de deshidratación necesitará un horno en el que pueda ajustar la temperatura o un deshidratador de alimentos. Lo ideal es que la temperatura máxima no supere los 42 °C. Tras un deshidratado de al menos seis horas, las rebanadas de almendra y abedul adquieren una consistencia esponjosa.</li>
+                        <li>Dejar que el pan de almendras y abedul se enfríe o servirlo directamente cuando todavía esté caliente. Las hojas de abedul son la decoración perfecta.</li>
+                    </ol>
+
+            <img class="receta-foto" src="../img/chipa2.jpg" alt="Chipá">
+                <h3>Chipá</h3>
+    
+                    <ol type="A" class="ordenLista">
+                        <li>Primero pre calentás el horno a 180°.</li>
+                        <li>Ponés a hervir el agua con la leche, la sal y el aceite. Apenas empiece a hervir apagás el fuego y añadis la fécula de una, se hace un engrudo tremendo pero vos seguí mezclando con una cuchara de madera.</li>
+                        <li>Dejás que se enfrie un toque (podés pasar la mezcla a un bowl si querés hacerlo más rápido) y le agregás el huevo.</li>
+                        <li>Por último le añadís el queso, unis todo y  untandote un poco de aceite en las manos, empezás a hacer las bolitas.</li>
+                        <li>Podés hacerlas más grandes para que sean tipo el “pao de queijo” brasilero o más chiquitas para los chipá clásicos.</li>
+                        <li>Los ponés en una fuente para horno, dejando espacio entre ellos porque crecen, y los horneás durante unos 20 o 25 minutos, o hasta que los veas bien dorados.</li>
+                        <li>Los dejás enfriar un toque (sí podés) y listo, a disfrutar de la receta de chipá caseros.</li>
+                    </ol>
+        </div>
     </main>
     <footer>
         <h4>Redes Sociales</h4>
-            <a href="https://www.facebook.com/La-Gran-Flauta-101594128497995" target="_blank"> Facebook</a>
-            <a href="https://www.instagram.com/lagranflautapanaderia/" target="_blank"> Instagram</a>
-            <a href="https://api.whatsapp.com/send/?phone=5491149702666&text&app_absent=0" target="_blank">Whatsapp</a>
-            
+            <a href="https://www.facebook.com/La-Gran-Flauta-101594128497995" target="_blank"> <img src="../img/facebook.png" alt="Pagina de Facebook"></a>
+            <a href="https://www.instagram.com/lagranflautapanaderia/" target="_blank"> <img src="../img/instagram.png" alt="Pagina de Instagram"></a>
+            <a href="https://api.whatsapp.com/send/?phone=5491149702666&text&app_absent=0" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp"></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
