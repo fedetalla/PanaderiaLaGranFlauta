@@ -17,42 +17,26 @@ body {
 
 /*Estilo header*/
 header {
-    height: 210px;
+    height: 150px;
     width: 100%;
-    background-color: black;
+    background-color: #333A40;
 }
 
-header div img{
-    transition: 0.5s;
-    cursor: pointer;
-    padding: 5px;
-}
 
-header div img:hover{
-    transform: scale(1.2);
-}
-
-.imgPrin {
-    display: flex;
-    justify-content: space-around;
-} 
 
 h1 {
     font-style: italic;
     text-align: center;
     color: orange;
-    background-color: black;
+    background-color: #333A40;
     font-size: 2cm;
+    text-align: center;
 }
 
-h1:hover {
-    transition: 4s;
-    font-size: 3cm;
-}
 
 nav {
     height: 40px;
-    width: auto;
+    width: 100%;
     background-color: black;
 }
 
@@ -93,8 +77,8 @@ nav a {
 
 nav a:hover {
     color: orange;
-    background-color: white;
-    padding: 20px;
+    background-color: orange;
+    padding: 0.5px;
 }
 
 /*Estilo main*/
@@ -344,20 +328,16 @@ table {
 
 /*media queries - inicio*/
 @media only screen and (max-width: 600px){
-    body{
-        background: url(../img/fondo.jpg)
-    }
     header {
         height: 100px;
         width: 100%;
-        background-color: black;
+
     }
     h1 {
         font-style: italic;
         text-align: center;
         color: orange;
-        background-color: rgb(0, 0, 0);
-        font-size: 3cm;
+        font-size: 1cm;
     }
 
 }
