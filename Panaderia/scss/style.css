@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Oswald:wght@200;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,342 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: #333A40;
+}
+header h1 {
+  font-style: italic;
+  text-align: center;
+  color: orange;
+  background-color: #333A40;
+  font-size: 2cm;
+  text-align: center;
+}
+header nav {
+  width: 100%;
+  background-color: black;
+}
+header nav div.container-fluid div.collapse.navbar-collapse ul.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li ul ul {
+  display: none;
+  position: absolute;
+}
+header nav ul li ul ul ul li:hover ul {
+  display: block;
+}
+header nav ul li ul ul li {
+  display: block;
+  background-color: black;
+}
+header nav a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: orange;
+  background-color: orange;
+  padding: 0.5px;
+}
+header .navbar-light .navbar-nav a.nav-link {
+  font-size: 100px;
+  color: black;
+}
+header .dropdown-menu {
+  background-color: #333A40;
+}
+header .dropdown-menu :hover {
+  color: white;
+  background-color: orange;
+  padding: 0.5px;
+}
+header .dropdown-item {
+  background-color: #333A40;
+  margin: 0px;
+  color: white;
+}
+
+main {
+  width: 100%;
+}
+main .sec {
+  width: 100%;
+}
+main .primeraSeccion {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+main #articuloUno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: white solid;
+  background: url(../img/fondo2.jpg);
+  background-size: 100%;
+  padding: 3px;
+  text-align: center;
+  font-size: 15px;
+  height: 200px;
+  width: 500px;
+}
+main #articuloUno table {
+  margin-top: 25px;
+  width: 500px;
+  background-size: cover;
+}
+main .articuloDos {
+  border: white solid;
+  background: url(../img/fondo2.jpg);
+  background-size: 100%;
+  padding: 3px;
+  text-align: justify;
+  font-size: 20px;
+  height: 200px;
+  width: 500px;
+  float: right;
+}
+main .articuloDos .tituloDos {
+  text-align: center;
+}
+main .segundaSeccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+main .segundaSeccion .articuloTres {
+  text-align: center;
+  height: 350px;
+  width: 50%;
+  float: left;
+}
+main .segundaSeccion .articuloCuatro {
+  height: 350px;
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+
+footer {
+  background: black;
+  background: linear-gradient(0deg, black 0%, #fdbb2d 100%);
+  text-align: center;
+  width: 100%;
+}
+footer .footerText {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+/*Estilo Locales*/
+.formatTitle {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+}
+
+.locales-div {
+  display: flex;
+  justify-content: center;
+}
+.locales-div .formatList {
+  border: white solid;
+  background: url(../img/fondo2.jpg);
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  height: 20%;
+  width: 35%;
+}
+
+/*Estilo Recetas*/
+.receta-div {
+  text-align: center;
+  margin: 8px;
+}
+.receta-div .subtitulo {
+  font-family: "Bebas Neue", cursive;
+}
+.receta-div .ordenLista {
+  list-style-position: inside;
+  list-style-image: url();
+}
+.receta-div .receta-foto {
+  border: black solid;
+  height: auto;
+  width: 50%;
+}
+
+.receta-titulo {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+/*Estilo Contacto*/
+.contacto-div {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.contacto-div .formatForm {
+  border: black solid;
+  background-image: url(../img/fondo2.jpg);
+  padding: 40px;
+  text-align: left;
+  font-size: 18px;
+  height: 75%;
+  width: 35%;
+  box-shadow: 7px 7px 30px black;
+  border-radius: 4px;
+  text-align: center;
+}
+.contacto-div .formatForm .inputClass {
+  border-radius: 4px;
+  background: #333A40;
+  color: orange;
+}
+.contacto-div .formatForm .inputClasscoment {
+  background: #333A40;
+}
+.contacto-div .botonsForm {
+  font-size: 15px;
+  background: #333A40;
+  color: orange;
+  border-radius: 4px;
+  font-family: "Oswald", sans-serif;
+}
+.contacto-div .botonsForm :hover {
+  border: 5px solid orange;
+}
+
+/*Estilo Productos*/
+.titleProduct {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.sectionProd {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 10px;
+  justify-items: stretch;
+}
+.sectionProd :hover {
+  border: 1px solid black;
+}
+.sectionProd #caja1 {
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-image: url(../img/chipa.JPG);
+}
+.sectionProd #caja2 {
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url(../img/donas.jpg);
+}
+.sectionProd #caja3 {
+  background-size: cover;
+  grid-column: 3/5;
+  grid-row: 1/2;
+  background-image: url(../img/fact.jpg);
+}
+.sectionProd #caja4 {
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 2/4;
+  background-image: url(../img/medialunas.jpg);
+}
+.sectionProd #caja5 {
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-image: url(../img/nosotros.jpg);
+}
+.sectionProd #caja6 {
+  background-size: cover;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background-image: url(../img/bandeja.jpg);
+}
+
+/*Media Querie Productos*/
+@media (max-width: 600px) {
+  .sectionProd {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 400px);
+  }
+  .sectionProd :hover {
+    border: 1px solid black;
+  }
+  .sectionProd #caja1 {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .sectionProd #caja2 {
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+  .sectionProd #caja3 {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+  .sectionProd #caja4 {
+    grid-column: 1/1;
+    grid-row: 4/5;
+  }
+  .sectionProd #caja5 {
+    grid-column: 1/1;
+    grid-row: 5/6;
+  }
+  .sectionProd #caja6 {
+    grid-column: 1/1;
+    grid-row: 6/7;
+  }
+}
+/*Media Querie Contacto*/
+@media (max-width: 824px) {
+  .contacto-div {
+    display: flex;
+    height: auto;
+    width: auto;
+    background-size: cover;
+  }
+  .contacto-div .formatForm {
+    border: black solid;
+    background-image: url(../img/fondo2.jpg);
+    padding: 40px;
+    text-align: left;
+    font-size: 18px;
+    height: 75%;
+    width: 35%;
+    /*modificar esto para la media querie*/
+  }
+  .contacto-div .formatForm .inputClass {
+    font-size: 8px;
+  }
+  .contacto-div .formatForm .inputClasscoment {
+    font-size: 6px;
+    background: #333A40;
+  }
+  .contacto-div .formatForm .botonsForm {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */

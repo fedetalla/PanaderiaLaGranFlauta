@@ -75,12 +75,6 @@ nav a {
     margin-left: 150px;
 }
 
-nav a:hover {
-    color: orange;
-    background-color: orange;
-    padding: 0.5px;
-}
-
 /*Estilo main*/
 main {
     /*height: 600px;*/
@@ -157,7 +151,6 @@ table {
     height: 350px;
     width: 50%;
     float: left;
-
 }
 
 .articuloCuatro {
