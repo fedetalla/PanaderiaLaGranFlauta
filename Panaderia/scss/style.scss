@@ -15,7 +15,6 @@ body {
 }
 
 header{
-    // height: 150px;
     width: 100%;
     background-color: #333A40;
     h1{
@@ -27,7 +26,6 @@ header{
         text-align: center;
     }
     nav{
-        // height: 50px;
         width: 100%;
         background-color: black;
         div.container-fluid{
@@ -60,7 +58,6 @@ header{
             font-size: 30px;
             color: white;
             text-decoration: none;
-            // margin-left: 120px;
         }
     }
     nav a:hover {
@@ -110,7 +107,7 @@ main{
         text-align: center;
         font-size: 15px;
         height: 200px;
-        width: 500px;
+        width: 50%;
         table {
             margin-top: 25px;
             width: 500px;
@@ -125,7 +122,7 @@ main{
         text-align: justify;
         font-size: 20px;
         height: 200px;
-        width: 500px;
+        width: 100%;
         float: right;
         .tituloDos {
             text-align: center;
@@ -138,7 +135,7 @@ main{
         .articuloTres {
             text-align: center;
             height: 350px;
-            width: 50%;
+            width: 100%;
             float: left;
         }
         .articuloCuatro {
@@ -303,8 +300,68 @@ footer {
     }
 }
 
+/*Media Querie Index*/
+@media (max-width: 900px){
+    main{
+        .sec{
+            width: 100%;
+            justify-content: center;
+        }
+        .primeraSeccion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #articuloUno {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: white solid;
+            background: url(../img/fondo2.jpg);
+            background-size: 100%;
+            padding: 3px;
+            text-align: center;
+            font-size: 15px;
+        
+            table {
+                margin-top: 20px;
+                width: 300px;
+            }
+        }
+        .articuloDos {
+            align-items: center;
+            border: white solid;
+            background: url(../img/fondo2.jpg);
+            background-size: 100%;
+            padding: 3px;
+            text-align: center;
+            font-size: 20px;
+            .tituloDos {
+                text-align: center;
+            }
+        }
+        .segundaSeccion {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .articuloTres {
+                text-align: center;
+                height: 350px;
+                width: 50%;
+                float: left;
+            }
+            .articuloCuatro {
+                height: 350px;
+                width: 50%;
+                text-align: center;
+                float: right;
+            }
+        }
+    }
+}
+
 /*Media Querie Productos*/
-@media (max-width: 600px){
+@media (max-width: 645px){
     .sectionProd {
         height: auto;
         width: 100%;
@@ -347,7 +404,7 @@ footer {
 }
 
 /*Media Querie Contacto*/
-@media (max-width: 824px){
+@media (max-width: 1000px){
     .contacto-div{
         display: flex;
         height: auto;
@@ -360,12 +417,9 @@ footer {
             text-align: left;
             font-size: 18px;
             height: 75%;
-            width: 35%; /*modificar esto para la media querie*/
-            .inputClass{
-                font-size: 8px;
-            }
+            width: 45%; 
             .inputClasscoment{
-                font-size: 6px;
+                font-size: 15px;
                 background: #333A40;
             }
             .botonsForm{
